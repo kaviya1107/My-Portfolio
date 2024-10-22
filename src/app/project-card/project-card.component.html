@@ -1,7 +1,15 @@
-<div class="card shadow text-center" style="max-width: 350px; min-width: 350px;">
+<div class="card shadow text-center" style="max-width: 350px; min-width: 350px; margin-top: 30px;">
     <div class="card-body">
-        <h5 class="card-title">Sample Project</h5>
-        <p class="card-text">This is a Simple Project for demonstrate Purposes</p>
+        <h5 class="card-title">{{project.name}}</h5>
+        <p class="card-text">{{project.summary}}</p>
         <button class="btn btn-primary">View More</button>
+    </div>
+    <div class="card-footer">
+        <div class=" d-flex flex-wrap justify-content-center" style="gap: 10px;"> <!--d-flex is used for aligned in a row by default..flex wrap is used for content within the container-->
+        <div *ngFor="let tag of project.tags">
+            <div class="tag ">{{tag}}</div>
+        </div>
+        <div class="tag ">Typescript</div> <!--also use me-2 mb-1 instead of margin-top:20px-->
+    </div>
     </div>
 </div>

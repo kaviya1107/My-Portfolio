@@ -1,4 +1,14 @@
 <p>portfolio works!</p>
 <div class="container">
-<app-project-card></app-project-card>
+    <div class="row">
+        <div style="max-width: 380px;">
+            <app-project-card [projectname]="'sample flutter project'"></app-project-card> 
+        </div>
+        <div style="max-width: 380px;">
+            <app-project-card [projectname]="'sample python project'"></app-project-card>
+        </div>
+        <div  style="max-width: 380px;">
+            <app-project-card [projectname]="'sample Iot project'"></app-project-card>
+        </div>
+    </div>
 </div>
