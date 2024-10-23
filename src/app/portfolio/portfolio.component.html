@@ -1,14 +1,8 @@
-<p>portfolio works!</p>
 <div class="container">
     <div class="row">
-        <div style="max-width: 380px;">
-            <app-project-card [projectname]="'sample flutter project'"></app-project-card> 
-        </div>
-        <div style="max-width: 380px;">
-            <app-project-card [projectname]="'sample python project'"></app-project-card>
-        </div>
-        <div  style="max-width: 380px;">
-            <app-project-card [projectname]="'sample Iot project'"></app-project-card>
+        <div *ngFor="let project of proj" style="max-width:380px; min-width: 380px;">
+            <app-project-card [project]="project"></app-project-card>
         </div>
     </div>
 </div>
+

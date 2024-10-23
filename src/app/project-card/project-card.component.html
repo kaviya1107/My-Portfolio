@@ -7,9 +7,10 @@
     <div class="card-footer">
         <div class=" d-flex flex-wrap justify-content-center" style="gap: 10px;"> <!--d-flex is used for aligned in a row by default..flex wrap is used for content within the container-->
         <div *ngFor="let tag of project.tags">
-            <div class="tag ">{{tag}}</div>
+            <div class="tag " [style.background-color]="tag.color">{{tag}}</div>
         </div>
-        <div class="tag ">Typescript</div> <!--also use me-2 mb-1 instead of margin-top:20px-->
+        <!-- <div class="tag ">Typescript</div> also use me-2 mb-1 instead of margin-top:20px -->
     </div>
     </div>
 </div>
+
