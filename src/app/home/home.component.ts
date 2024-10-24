@@ -16,3 +16,4 @@ constructor(public titleservice:Title, private service:ProjectsService){
     this.featured=this.service.Getprojectbyid(1);
   }
 }
+ 

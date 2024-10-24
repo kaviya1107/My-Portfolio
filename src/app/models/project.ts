@@ -6,6 +6,6 @@ export interface Project{
     summary:string;
     description:string;
     projectlink:string;
-    // pictures:string[];
+    pictures:string[];
     tags:Tag[];
 }
