@@ -14,7 +14,8 @@ import { ProjectCardComponent } from './project-card/project-card.component';
 import {ModalModule} from 'ngx-bootstrap/modal';
 import { ProjectModelComponent } from './project-model/project-model.component';
 import {CarouselModule} from 'ngx-bootstrap/carousel'
-
+import { FormsModule } from '@angular/forms';
+import { CollapseModule} from 'ngx-bootstrap/collapse'
 
 @NgModule({
   declarations: [
@@ -33,7 +34,9 @@ import {CarouselModule} from 'ngx-bootstrap/carousel'
     AppRoutingModule,
     BrowserAnimationsModule,
     ModalModule.forRoot(),
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    CollapseModule.forRoot(),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

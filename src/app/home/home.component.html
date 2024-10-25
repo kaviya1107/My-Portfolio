@@ -14,6 +14,17 @@
                 <h2>Featured Projects</h2>
                 <h4>{{featured.name}}</h4>
             </div>
+
+            <carousel>
+                <div *ngFor="let pic of featured.pictures">
+                    <slide><img src={{pic}} alt="1" style="display: block;width: 100%;"></slide>
+                </div>
+            </carousel>
+            <p style="text-align: center;">{{featured.summary}}</p>
+            <p style=text-align:center;>
+                <a href="http://localhost:4200/portfolio" target="_blank">Visit the Portfolio Section to learn more!
+                </a>
+                </p>
         </div>
     </div>
 </div>

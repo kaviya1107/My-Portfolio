@@ -11,6 +11,4 @@ export class Tag{
     toString(){ //method name
         return this.key;//only return key value 
     }
-    
-
 }
