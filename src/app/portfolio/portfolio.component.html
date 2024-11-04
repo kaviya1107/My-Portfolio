@@ -5,20 +5,15 @@
         </div>
         <div [collapse]="isCollapsed" [isAnimated]="true">
             <!-- <div class="border mb-2 shawdow-sm" style="width: 250px;"></div> -->
-             <hr style="width: 250px;">
-             <form>
+            <hr style="width: 250px;">
+            <form>
                 <div class=" row ">
                     <div class="col">
                         <small><b>Languages</b></small>
                         <div class="form-group">
                             <div class="form-check">
-                                <input
-                                type="checkbox"
-                                 class="form-check-input position-static me-2"
-                                 [(ngModel)]="typescript"
-                                 (change)="Filter()"
-                                 name="Typescript"
-                                 >
+                                <input type="checkbox" class="form-check-input position-static me-2"
+                                    [(ngModel)]="typescript" (change)="Filter()" name="Typescript">
                                 <label class="form-check-label small">Typescript</label>
                             </div>
                         </div>
@@ -27,7 +22,7 @@
                         <small><b>Frameworks</b></small>
                     </div>
                 </div>
-             </form>
+            </form>
         </div>
     </div>
     <div class="row">
@@ -36,4 +31,3 @@
         </div>
     </div>
 </div>
-
